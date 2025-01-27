@@ -1,0 +1,202 @@
+@font-face {
+  font-family: "CC1";
+  src: url(../assets/L15-RegularExtended.ttf);
+}
+
+@font-face {
+  font-family: "CC2";
+  src: url(../assets/L15-BoldExtended.ttf);
+}
+
+body,
+html {
+  text-align: center;
+  color: Black;
+}
+
+body {
+  background-color: #cccac2;
+  /* background-color: red; */
+  /* font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif; */
+  margin: 0px;
+}
+
+div.page {
+  max-height: 100vh;
+  max-width: 100vw;
+  text-align: left;
+  /* border: 1px solid red; */
+}
+
+.pinch-zoom-parent {
+  height: 100vh;
+  width: 100vw;
+  /* border: 1px solid green; */
+  position: relative;
+}
+
+img {
+  height: 300vh;
+}
+
+div.pinch-zoom div.description h1 {
+  font-size: 40px;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.top {
+  position: fixed;
+  /* margin-left: 1em; */
+  font-size: 1em;
+  font-family: "CC1", serif;
+  border: 0.1em solid black;
+  border-radius: 0.5em;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  /* top: 1em; */
+  text-decoration: none;
+  color: black;
+}
+
+#info {
+  top: 1em;
+  right: 1em;
+  z-index: 100;
+}
+
+#sprog {
+  top: 1em;
+  left: 1em;
+  z-index: 100;
+}
+
+#next {
+  bottom: 4em;
+  right: 1em;
+  z-index: 100;
+}
+
+#close {
+  text-align: center;
+  bottom: 10em;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#question {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  /* border: 1px solid red; */
+  font-size: 1.8em;
+  font-family: "CC1", serif;
+  text-align: center;
+  width: 90vw;
+  margin-top: 5.5em;
+}
+
+#sub-text {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  width: 70vw;
+  margin-top: 16em;
+  font-size: 0.8em;
+  font-family: "CC1", serif;
+}
+
+#instruction {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  /* border: 1px solid red; */
+  font-size: 1em;
+  font-family: "CC1", serif;
+  text-align: center;
+  width: 90vw;
+  bottom: 14em;
+}
+
+#logo {
+  position: fixed;
+  bottom: 1em;
+  left: 1em;
+  width: 150px;
+  height: 36.38px;
+  opacity: 0.2;
+  /* border: 1px solid red; */
+}
+
+.overlay {
+  position: fixed;
+  background-color: rgb(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+#pop-up {
+  position: fixed;
+  /* border: 1px solid red; */
+  background-color: white;
+  width: 95vw;
+  height: 95vh;
+  top: 2.5vh;
+  left: 2.5vw;
+  z-index: 1000;
+  border-radius: 0.5em;
+  transition: all 0.5s ease-in-out;
+}
+
+#info-text {
+  text-align: left;
+  padding-top: 4em;
+  padding-left: 4em;
+  padding-right: 4em;
+}
+
+h3 {
+  font-family: "CC2", serif;
+  font-size: 2em;
+}
+
+h4 {
+  font-family: "CC2", serif;
+}
+
+h5 {
+  font-family: "CC1", serif;
+  font-size: 0.9em;
+}
+
+@media all and (max-width: 500px) {
+  body {
+    background-color: red;
+  }
+
+  #info-text {
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
